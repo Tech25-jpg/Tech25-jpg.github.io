@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My RePuLsIvE WeBpAgE</title>
+    </head>
+    <body style="background-color: white; color: black; font-family: Arial, sans-serif;">
+        <h2 style="font-family: 'Comic Sans MS', cursive; margin-left: 50px;">THIS WEBSITE IS FOR C00LKIDDS ONLY!! GET OUT</h2>
+         <h1 style="font-family: Papyrus, fantasy; margin-left: 5px;">ITS I, THE GREAT PAPYRUS, HAVE COME TO MAKE AN EXPLICIT CAMEO IN THIS WEBSITE!</h1>
+    
+         <br><br><br><br>
+
+    <!-- OPPOSITE OF BIG -->
+     <p style="text-align: center; font-family: 'Times New Roman', serif; margin-top: 100px; margin-bottom: 5px;">
+        WARNING: THIS WEBSITE CONTAINS EXTREME LEVELS OF LAME-ITUDE. PROCEED WITH CAUTION IF YOU VALUE YOUR COOLNESS AND YOUR SANITY.
+    </p>
+    <!-- OPPOSITE OF SMALL --->
+    <p style="font-size: 48px; font-family: 'Comic Sans MS', cursive; margin-right: 10px; margin-top: 2px;">
+        YOU HAVE BEEN WARNED! NOW BEGONE, LAME ONE!
+    </p>
+
+    <!-- Messed up Image Ratio-->
+     <img src="https://static.wikia.nocookie.net/joke-battles/images/6/65/Wega.png/revision/latest?cb=20240617155810" width="400" height="400" alt="BAHHH">
+
+    <!-- Bad (Apple) Caption -->
+     <h5 style="font-family: 'Arial Black', Gadget, sans-serif; margin-left: 150px; margin-top: 10px;">
+        FIGURE 1: AN IMAGE OF THE INFAMOUS WEGA, KNOWN FOR HIS UNPARALLELED RAD-ITUDE AND ABSOLUTE COOLNESS PROFICIENCY.
+    </h5>
+        <br><br>
+    <!-- underlined, (NOT A LINK) -->
+     <p style="font-family: 'Comic Sans MS', cursive; margin-left: 80px; margin-right: 200px; margin-top: 3px; margin-bottom: 60px;">
+        <u style="font-family: 'Comic Sans MS', cursive;">DISCLAIMER: THIS TEXT CONTAINS A SCARY NON-UNDERLINED LINK!</u>
+        <span style="background-color: yellow; font-family: Papyrus, fantasy;">Yellow; my favorite food</span>
+        and this is a real <a href="#">link</a> next to it.
+     </p>
+
+     <br><br><br><br>
+     <!-- bulleted list -->
+      <ul style="text-align: center; list-style-position: inside; font-family: 'Times New Roman', serif; margin-left: 15px; margin-right: 300px; margin-top: 5px; margin-bottom: 80px;">
+        <li style="font-family: 'Times New Roman', Times, serif;">A VERY CENTERED LIST</li>
+        <li style="font-family: 'Times New Roman', Times, serif;">WITH SOME RAD ITEMS</li>
+        <li style="font-family: 'Times New Roman', Times, serif;">FOR YOUR (NOW) COOL READING PLEASURE</li>
+        <li style="font-family: 'Times New Roman', Times, serif;">ENJOY THE RAD-ITUDE!</li>
+      </ul>
+
+    <br><br>
+
+    <!-- POOR contrasting text-->
+     <p style="color: #CCCCCC; background-color: white; font-family: Papyrus, fantasy; font-size: 14px; margin-left: 250px; margin-right: 10px; margin-top: 10px; margin-bottom: 3px;">
+        THIS TEXT IS HARD TO READ DUE TO POOR CONTRAST! PROCEED WITH CAUTION IF YOU VALUE YOUR EYESIGHT!
+     </p>
+
+     <br><br><br>
+
+     <!-- Elemental Battleground -->
+     <div style="border-top: 20px solid red; border-right: 20px dotted blue; border-bottom: 20px dashed green; border-left: 20px double purple; padding: 30px; font-family: 'Comic Sans MS', cursive; margin-top: 100px; margin-bottom: 5px; margin-left: 50px; margin-right: 150px;">
+        <p style="font-family: 'Comic Sans MS', cursive; margin: 0;">
+        
+WELCOME TO THE ELEMENTAL BATTLEGROUND! HERE, THE FORCES OF RAD-ITUDE CLASH IN AN EPIC SHOWDOWN OF COOLNESS AND LAME-ITUDE. MAY THE RADDEST ONE WIN! Red is Right, Blue is True, Green is Keen, and Purple is Superior to all the other colors.
+        </p>
+    </div>
+    
+    <br><br><br><br><br><br>
+    <!-- Inconsistent Styling -->
+     <h3 style="font-family: Papyrus, fantasy; text-align: center; margin-top: 2px; margin-bottom: 150px; margin-left: 5px; margin-right: 5px;">
+        The Header No One Invited:
+     </h3>
+
+     <p style="font-family: 'Comic Sans MS', cursive; background-color: lightblue; padding: 10px; margin-left: 400px; margin-right: 10px; margin-top: 5px; margin-bottom: 200px;">
+        <p style="font-family: 'Comic Sans MS', cursive;"><u>More useless text</u> that is not a link and ultimately serves no purpose other than to freeload space. And some <span style="background-color: lime; font-family: Papyrus, fantasy;">highlighted words that dislike their distant cousins; lemons</span> mixed in.
+    </p>
+
+    <br><br><br><br><br><br>
+
+    <p style="font-family: 'Times New Roman', serif; font-size: 12px; text-align: center; margin-top: 300px;">
+        © 2026 THE RAD COMPANY. ALL RIGHTS RESERVED. NO COOL KIDS WERE HARMED IN THE MAKING OF THIS WEBSITE.
+    </p>
+</body>
+</html>
