@@ -1,0 +1,45 @@
+/* default.css for introductory page */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background-color: rgb(63, 108, 81);
+    color: rgb(188, 189, 139);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Courier New', monospace;
+    color: lightcyan;
+}
+
+header {
+    background-color: rgb(100, 99, 153);
+    color:rgb(188, 189, 139);
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(100, 99, 153);
+    color:rgb(188, 189, 139);
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    background-color: rgb(200, 199, 222);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+a:link {
+    color:yellow;
+}
+a:visited {
+    color:orange;
+}
+a:hover {
+    color: rgb(255, 234, 236);
+}
+a:active {
+    color: rgb(119, 45, 139);
+}

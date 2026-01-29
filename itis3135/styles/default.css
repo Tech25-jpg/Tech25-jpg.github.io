@@ -1,0 +1,33 @@
+/* Default CSS styles for ITIS 3135 Course Page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    background-color: rgb(255, 245, 178);
+    color: #7a7979;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: antiquewhite;
+}
+
+header {
+    background-color: burlywood;
+    color:#7a7979;
+    padding: 10px;
+}
+
+footer {
+    background-color: burlywood;
+    color:#7a7979;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    background-color: #ddd2d2;
+    padding: 20px;
+    border-radius: 8px;
+}
