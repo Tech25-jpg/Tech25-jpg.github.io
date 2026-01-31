@@ -31,3 +31,36 @@ main {
     padding: 20px;
     border-radius: 8px;
 }
+
+/* Additional styles - Primary Navigation (Course Pages */
+#primary-nav {
+    background-color: forestgreen;
+    padding: 10px;
+    text-align: center;
+}
+
+#primary-nav a {
+    color: rgb(255, 222, 37);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#primary-nav a:hover {
+    background-color: rgb(119, 82, 13)
+}
+
+/* Additional styles - Secondary Navigation (Other Pages) */
+#secondary-nav {
+    background-color: forestgreen;
+    padding: 5px;
+    text-align: center;
+    padding: 3px 8px;
+}
+#secondary-nav a {
+    color: rgb(255, 222, 37);
+    text-decoration: none;
+    padding: 3px 8px;
+}
+#secondary-nav a:hover {
+    background-color: orange;
+}
