@@ -13,20 +13,20 @@ h1 {
 }
 
 header {
-    background-color: rgb(100, 99, 153);
-    color:rgb(188, 189, 139);
+    background-color: rgb(20, 71, 47);
+    color:rgb(124, 124, 94);
     padding: 10px;
 }
 
 footer {
-    background-color: rgb(100, 99, 153);
+    background-color: rgb(44, 80, 60);
     color:rgb(188, 189, 139);
     text-align: center;
     padding: 10px;
 }
 
 main {
-    background-color: rgb(200, 199, 222);
+    background-color: rgb(24, 92, 52);
     padding: 20px;
     border-radius: 8px;
 }
