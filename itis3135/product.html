@@ -7,13 +7,71 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/default.css">
 </head>
+
 <body>
     <div data-include="components/header.html"></div>
+<header id="header">
+  <div class="logo">
+    <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmqJpf98QyDV5DRzmAKs4PPgqaBwKm44QORA&s" alt="Keen Turkey Logo">
+    <span>Keen Turkey</span>
+  </div>
 
-    <main>
-    <h2>Highlight</h2>
-    <p>Highlighted content will go here.</p>
-    </main>
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#features">Features</a></li>
+      <li><a class="nav-link" href="#video-section">Experience</a></li>
+      <li><a class="nav-link" href="#pricing">Pricing</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+  <section id="hero">
+      <h2>Thanksgiving Feasts Delivered Fresh</h2>
+    <form id="form" action="https://www.freecodecamp.org/email-submit">
+    <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+    <input id="submit" type="submit" value="Get Started" class="btn">
+    </form>
+  </section>
+
+<section id="features">
+  <div class="grid">
+    <div class="icon">🍗</div>
+    <div class="desc">
+      <h3>Farm-Fresh Turkey</h3>
+      <p>Locally sourced, hormone-free turkeys prepared by expert chefs for your perfect Thanksgiving Dinner.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="video-section">
+  <h2>Watch Our Preparation Process</h2>
+  <iframe id="video" height="325" width="560" src="https://www.youtube.com/embed/17xV-2wbTm8" allowfullscreen></iframe>
+</section>
+
+<h2>Feast Options:</h2>
+<section id="pricing">
+  <div class="product" id="standard">
+    <div class="level"><b>Family Feast</b></div>
+    <h2>$199</h2>
+    <p>Serves 8-10 people</p>
+    <p>Includes a 12-14 lb herb-roasted turkey, stuffing, cranberry sauce, and a dessert.</p>
+    <button class="btn">Select</button>
+    </div>
+ </section>
+
+  <div class="product" id="premium">
+    <div class="level"><b>Grand Feast</b></div>
+    <h2>$249</h2>
+    <p>Serves 12-15 people</p>
+    <p>Complete thanksgiving spread with all the fixings.</p>
+    <button class="btn">Select</button>
+    </div>
+  </main>
 
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
