@@ -290,3 +290,81 @@ code {
     margin-left: 0;
   }
 }
+
+/* Intro Form */
+#intro-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #d9d375;
+    text-align: left;
+}
+
+#intro-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+#intro-form input[type="text"],
+#intro-form input[type="date"],
+#intro-form input[type="url"],
+#intro-form textarea {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #8af3ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.course-entry {
+    background: #d9d375;
+    padding: 10px;
+    border: 1px dashed #d9d375;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+.form-controls {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #eee;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.course-entry {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px dashed #d9d375;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-entry input {
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+.remove-btn {
+  background-color: #ffcccc;
+  border: 1px solid #ff0000;
+  cursor: pointer;
+}

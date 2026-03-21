@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin Teah - Introduction Form</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+<main>
+    <h2 id="page-header">Introduction Form</h2>
+    <h3>Please submit the following information below.</h3>
+
+    <figure>
+        <img src="/1738707586340.jpg" alt="Professional headshot">
+        <figcaption id="live-caption">Kevin Teah, creator of this form</figcaption>
+    </figure>
+
+    <form id="intro-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" value="" required placeholder="Enter first name">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" value="" required placeholder="Enter last name">
+
+        <label for="ack-statement">Acknowledgement Statement:</label>
+        <textarea id="ack-statement" required>I, [Name], acknowledge the information below is factual.</textarea>
+
+        <label for="ack-date">Acknowledgement Date:</label>
+        <input type="date" id="ack-date" value="" required>
+
+        <label for="divider">Mascot Divider:</label>
+        <input type="text" id="divider" value="" required placeholder="ex. (ie, ~, |, ♥️, etc)">
+
+        <label for="mascot-adj">Mascot Adjective:</label>
+        <input type="text" id="mascot-adj" value="" required placeholder="ex. Keen">
+
+        <label for="mascot-animal">Mascot Animal:</label>
+        <input type="text" id="mascot-animal" value="" required placeholder="ex. Turkey">
+        
+        <label for="user-image">Picture:</label>
+        <input type="file" id="user-image" accept="image/*">
+
+        <label for="personal-statement">Personal Statement:</label>
+        <textarea id="personal-statement" required>For what courage takes to stand, must also take to listen.</textarea>
+
+        <label for="personal-background">Personal Background:</label>
+        <textarea id="personal-background" required></textarea>
+
+        <label for="professional-background">Professional Background:</label>
+        <textarea id="professional-background" required> </textarea>
+
+        <label for="academic-background">Academic Background:</label>
+        <textarea id="academic-background" required> </textarea>
+
+
+        <div id="course-container">
+            <h4>Courses</h4>
+            <div class="course-entry">
+                <input type="text" id="Department" class="dept" value="" required placeholder="ex. ITIS">
+                <input type="text" id="Number" class="course-num" value="" required placeholder="ex. 3135">
+                <input type="text" id="Name" class="course-name" value="" required placeholder="Web Development">
+                <input type="text" id="Reason" class="course-reason" value="" required placeholder="major requirement">
+            </div>
+        </div>
+        <button type="button" id="add-course">Add Another Course</button>
+
+        <label for="user-quote">Favorite Quote:</label>
+        <input type="text" id="user-quote" value="" required placeholder="You only fail if you stop writing.">
+
+        <label for="quote-author">Quote Author:</label>
+        <input type="text" id="quote-author" value="" required placeholder="Ray Bradbury">
+
+        <label for="link-linkedin">LinkedIn URL:</label>
+        <input type="url" id="link-linkedin" value="" required placeholder="https://www.linkedin.com/in/kevin-teah-90b1a0332/">
+
+        <label for="link-github">Github Profile URL:</label>
+        <input type="url" id="link-github-io" value="" required placeholder="https://github.com/Tech25-jpg/Tech25-jpg.github.io">
+
+        <label for="link-personal-webpage">Personal Webpage URL:</label>
+        <input type="url" id="link-personal-webpage" value="" required placeholder="https://webpages.charlotte.edu/kteah/">
+
+        <label for="link-fcc">freeCodeCamp URL:</label>
+        <input type="url" id="link-fcc" value="" required placeholder="https://www.freecodecamp.org/kteah25">
+
+        <label for="link-github">Github URL:</label>
+        <input type="url" id="link-github" value="" required placeholder="https://github.com/Tech25-jpg">
+
+    <div class="form-controls">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="clear-btn">Clear</button>
+        <button type="button" id="gen-html">Generate HTML</button>
+        <button type="button" id="gen-json">Generate JSON</button>
+    </div>
+    </form>
+    <div id="result-container"></div>
+</main>
+ 
+<!-- Script | Footer -->
+<div data-include="components/footer.html"></div>
+ <!--Script Function -->
+<script src="scripts/HTMLInclude.min.js"></script>
+<script src="scripts/introduction.js"></script>
+<script src="scripts/generate_json.js"></script>
+<script src="scripts/generate_html.js"></script>
+</body>
