@@ -50,6 +50,13 @@ document.getElementById('add-course').addEventListener('click', () => {
         document.querySelector("h3").style.display = "none";
         document.getElementById("page-header").innerText = "Introduction Page";
 
+        // Gather link values
+        const linkedin = document.getElementById("link-linkedin").value;
+        const githubIo = document.getElementById("link-github-io").value;
+        const personal = document.getElementById("link-personal-webpage").value;
+        const fcc = document.getElementById("link-fcc").value;
+        const github = document.getElementById("link-github").value;
+
         // intro-image generator
         resultContainer.innerHTML = `
         <h3>${firstName} ${lastName} ${divider} ${mascotAdjective} ${mascotAnimal}</h3>
@@ -65,6 +72,13 @@ document.getElementById('add-course').addEventListener('click', () => {
             <li><strong>Courses:</strong>
                 <ul>${coursesHTML}</ul>
             </li>
+            <li><strong>Professional Links:</strong>
+                    <ul>
+                        <li><a href="${linkedin}" target="_blank">LinkedIn</a></li>
+                        <li><a href="${githubIo}" target="_blank">GitHub.io (Project Page)</a></li>
+                        <li><a href="${personal}" target="_blank">Personal Webpage</a></li>
+                        <li><a href="${fcc}" target="_blank">freeCodeCamp Profile</a></li>
+                        <li><a href="${github}" target="_blank">GitHub Profile</a></li>
         </ul>
         <p><strong>Quote:</strong> "${document.getElementById("user-quote").value} - ${document.getElementById("quote-author").value}</p>
         <br>
