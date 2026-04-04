@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview</title>
+    <link rel="stylesheet" href="../styles/default.css">
+    </head>
+    <body>
+        <div data-include="../components/header.html"></div>
+        <header>
+            <h1>Kevin Teah Enterprises</h1>
+            <h2>Project Overview: Web Dev Quest</h2>
+        </header>
+
+        <main>
+            <section>
+                <h3>Project Description</h3>
+                <p><strong>Description:</strong> The content of this page will be an interactive web application designed to teach users the fundamentals of web development through an educational experience. The project aims to provide an engaging and educational platform for beginners to learn HTML, CSS, and JavaScript while completing quests and challenges.</p>
+                <p><strong>Intended Users:</strong> University students and hobbyists with no prior programming experience who require a structured, visual introduction to web development.</p>
+            </section>
+
+            <section>
+                <h3>Client Information</h3>
+                <p><strong>Name:</strong> Tonia Teah</p>
+                <p><strong>Organization:</strong> Charlotte-Mecklenburg Schools</p>
+                <p><strong>Email:</strong> teahtt@gmail.com</p>
+                <p><strong>Phone:</strong> (704) 713-4697</p>
+            </section>
+
+            <section>
+                <h3>Proposed Pages:</h3>
+                <ul>
+                    <li><strong>Home Page (index.html):</strong> The brief overview on what the site is about and its learning objectives.</li>
+                    <li><strong>Structure Page (structure.html):</strong> Details about the HTML structure and layout.</li>
+                    <li><strong>Style Page (css.html):</strong> Information on CSS styling and design.</li>
+                    <li><strong>Logic Page (js.html):</strong> An introduction to JavaScript, focusing on basic programming concepts, DOM manipulation, and event handling.</li>
+                    <li><strong>Quiz Page (quiz.html):</strong> Interactive quizzes that test users' understanding of the material covered in the previous pages, with real-time feedback and explanations for correct and incorrect answers.</li>
+                </ul>
+            </section>
+
+            <section class="page-specification">
+                <h3>Page Specifications</h3>
+               <div class="page-block">
+                    <h4>1. Home Page (index.html)</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> To provide a welcoming introduction to the Web Dev Quest, outlining the learning objectives and providing navigation to the other pages.</li>
+                        <li><strong>Audience:</strong> University students and hobbyists with no prior programming experience who are interested in learning web development.</li>
+                        <li><strong>Content:</strong> A brief overview of the site's purpose and learning objectives.</li>
+                        <li><strong>Data Entry:</strong> No. </li>
+                        <li><strong>Validations:</strong> None.</li>
+                        <li><strong>Interactivity:</strong> The page will include interactive elements such as navigation links and a simple contact form. (AJAX)</li>
+                        <li><strong>Actions:</strong> Clicking the "Start Quest" button will navigate the user to the first lesson.</li>
+                    </ul>
+               </div>
+
+               <div class="page-block">
+                    <h4>2. Structure Page (structure.html)</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> To teach the fundamentals of HTML structure and layout.</li>
+                        <li><strong>Audience:</strong> University students, hobbyists, and beginners.</li>
+                        <li><strong>Content:</strong> Explanations regarding semantic markup, head/body relationship, and nesting.</li>
+                        <li><strong>Data Entry:</strong> No. </li>
+                        <li><strong>Validations:</strong> None.</li>
+                        <li><strong>Interactivity:</strong> <strong>jQuery-UI Accordion</strong> used to toggle between different tag categories.</li>
+                        <li><strong>Actions:</strong> Clicking headers expand lesson details to avoid information overload.</li>
+                    </ul>
+               </div>
+            </section>
+
+            <div class="page-block">
+                    <h4>3. Style Page (css.html)</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> To teach the fundamentals of CSS styling and layout.</li>
+                        <li><strong>Audience:</strong> University students, hobbyists, and beginners.</li>
+                        <li><strong>Content:</strong> Explanations regarding selectors, properties, and layout techniques.</li>
+                        <li><strong>Data Entry:</strong> No. </li>
+                        <li><strong>Validations:</strong> None.</li>
+                        <li><strong>Interactivity:</strong> <strong>jQuery-UI Accordion</strong> layout and typography.</li>
+                        <li><strong>Actions:</strong> Clicking headers expand lesson details about CSS coding snippets and (or) visual examples.</li>
+                    </ul>
+               </div>
+
+            <div class="page-block">
+                    <h4>4. Logic Page (js.html)</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> To teach the fundamentals of JavaScript logic and programming.</li>
+                        <li><strong>Audience:</strong> Students moving forward in their programming journey.</li>
+                        <li><strong>Content:</strong> Explanations regarding variables, functions, control structures, and DOM manipulation.</li>
+                        <li><strong>Data Entry:</strong> Yes. </li>
+                        <li><strong>Validations:</strong> Yes. Real-time validation for user inputs.</li>
+                        <li><strong>Interactivity:</strong> <strong>Custom JavaScript</strong> functions used to trigger events.</li>
+                        <li><strong>Actions:</strong> Clicking a "Run Logic" button processes the input and provides immediate feedback on certain fields.</li>
+                    </ul>
+            </div>
+
+            <div class="page-block">
+                    <h4>5. Quiz Page (quiz.html)</h4>
+                    <ul>
+                        <li><strong>Purpose:</strong> To assess the understanding of HTML structure and layout.</li>
+                        <li><strong>Audience:</strong> University students, hobbyists, and beginners who've completed the lessons.</li>
+                        <li><strong>Content:</strong> Questions testing knowledge of semantic markup, head/body relationship, and nesting.</li>
+                        <li><strong>Data Entry:</strong> Yes. Radio buttons, textboxes, and dropdowns for answering questions. </li>
+                        <li><strong>Validations:</strong> Yes. Strict form validation.</li>
+                        <li><strong>Interactivity:</strong> <strong>Submit Results</strong> button that triggers a script to calculate the final score.</li>
+                        <li><strong>Actions:</strong> On click, the data is validated, score is computed, and a summary is displayed via dynamic div.</li>
+                    </ul>
+               </div>
+
+            <section>
+                <h3>Dynamic Functionality</h3>
+                <ul>
+                    <li><strong>jQuery-UI Accordion:</strong> An interactive accordion component for displaying content in a collapsible manner, while also preventing an influx of information overload.</li>
+                    <li><strong>AJAX:</strong> Asynchronous JavaScript and XML for updating parts of a web page without reloading the entire page.</li>
+                    <li><strong>Form Validation:</strong> Real-time validation for user inputs to ensure data integrity and improve user experience. Both the logic and quiz pages will have these while using the submit button event, and updating a div with results. The validation will also ensure that the user didn't leave their answer blank.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Site Map</h3>
+                <figure>
+                    <img src="images/sitemap_teah.png" alt="Site Map Diagram" class="footer-icon">
+                    <figcaption>Site Map Diagram illustrating the structure and navigation of the Web Dev Quest application.</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Project Wireframe</h3>
+                <figure>
+                    <img src="images/wireframe_teah.png" alt="Wireframe Diagram" class="footer-icon">
+                    <figcaption>Wireframe Diagram showcasing the layout and design of the Web Dev Quest application.</figcaption>
+                </figure>
+            </section>
+        </main>
+        
+        <footer>
+            <div data-include="../components/footer.html"></div>
+    <p>Designed by <a href="https://webpages.charlotte.edu/kteah/itis3135/kevinteahenterprises.com/">Kevin Teah Enterprises</a></p>
+    <div class="validation-links">
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="https://www.w3.org/Icons/valid-html401.png" alt="Valid HTML"></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue.png" alt="Valid CSS" class="footer-icon"></a>
+        <a href="https://wave.webaim.org/report#/" target="_blank" rel="noopener noferrer">
+            <img src="https://wave.webaim.org/static/images/wave-icon.png" alt="Accessibility Check" class="footer-icon"></a>
+
+    </div>
+</footer>
+<script src="../scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
