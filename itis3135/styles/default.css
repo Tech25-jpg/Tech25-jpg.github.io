@@ -368,3 +368,33 @@ button:hover {
   border: 1px solid #ff0000;
   cursor: pointer;
 }
+
+/* Link container for index.html outside of the itis3135 directory */
+.link-container {
+  border: 2px solid #be5a38;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: fit-content;
+}
+
+.link-container a {
+  color: #e55934;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+  color: #7b4b94;
+}
+
+/* Font style for index.html outside itis3135 directory */
+body {
+  font-family: 'Romanesco', serif;
+  color: #3b28cc;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
