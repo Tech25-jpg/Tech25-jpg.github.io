@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Web Dev Quest</title>
+    <link rel="icon" type="image/png" href="images/coding.png">
+    <link rel="stylesheet" href="styles/quest_styles.css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/quest_nav.html"></div>
+    </header>
+    <main>
+        <section>
+            <h3>CSS - Cascading Style Sheets</h3>
+            <p>CSS is the language used to style and layout web pages. It allows you to control the color, font, spacing, and overall appearance of your website.</p>
+            <p>In this section, you'll learn about CSS syntax, selectors, properties, and how to link CSS to your HTML document.</p>
+    <div class="box-model-demo">
+        <div class="content">Content</div>
+        <div class="padding">Padding</div>
+        <div class="border">Border</div>
+        <div class="margin">Margin</div>
+    </div>
+</section>
+
+<section>
+    <h3>CSS Selectors in Action</h3>
+    <p>Click each box to learn more about how these selectors work!</p>
+
+    <div class="selector-playground">
+        <div class="sample-box" id="trigger-id">ID Selector</div>
+        <div class="sample-box" id="trigger-class">Class Selector</div>
+        <div class="sample-box" id="trigger-type">Type Selector</div>
+    </div>
+
+    <div id="dialog-id" class="hidden-dialog" title="ID Selectors">
+        <p>ID selectors target a specific element with a unique identifier. They are defined using the '#' symbol followed by the ID name. For example, <code>#box-1</code> will select the element with the ID of 'box-1'.</p>
+    </div>
+    <div id="dialog-class" class="hidden-dialog" title="Class Selectors">
+        <p>Class selectors target one or more elements that share the same class attribute. They are defined using the '.' symbol followed by the class name. For example, <code>.box</code> will select all elements with the class of 'box'.</p>
+    </div>
+    <div id="dialog-type" class="hidden-dialog" title="Type Selectors">
+        <p>Type selectors target elements based on their HTML tag name. For example, <code>div</code> will select all div elements.</p>
+    </div>
+
+</main>
+    <footer>
+        <p>&copy; 2026 Kevin Teah Enterprises. All rights reserved.</p>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/quest_logic.js"></script>
+
+</body>
+</html>

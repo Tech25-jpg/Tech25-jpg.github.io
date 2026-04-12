@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Web Dev Quest</title>
+    <link rel="stylesheet" href="styles/quest_styles.css">
+    <link rel="icon" type="image/png" href="images/coding.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+<header>
+    <div data-include="components/quest_nav.html"></div>
+</header>
+
 <section id="quiz-container">
     <h3>Knowledge Check: HTML: Basics</h3>
     <form id="quizForm">
@@ -43,5 +59,20 @@
             <label><input type="radio" name="q6" value="c"> &lt;img&gt;</label><br>
         </div>
 
-        <button type="submit">Submit Quiz</button>
+        <button type="button" onclick="validateQuiz()">Submit Quiz</button>
+        <button type="button" onclick="resetQuiz()">Retake Quiz</button>
+        <div id="quiz-result" class="quiz-container"></div>
+    </form>
 </section>
+
+<footer>
+        <p>&copy; 2026 Kevin Teah Enterprises. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="scripts/quest_logic.js"></script>
+    <script src="scripts/quiz.js"></script>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

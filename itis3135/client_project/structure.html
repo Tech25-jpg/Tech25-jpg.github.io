@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure - Web Dev Quest</title>
+    <link rel="icon" type="image/png" href="images/coding.png">
+    <link rel="stylesheet" href="styles/quest_styles.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/quest_nav.html"></div>
+    </header>
+    <main>
+        <section>
+            <h3>The HTML Skeleton</h3>
+            <p>Every HTML document starts with a basic structure, often referred to as the "HTML skeleton". This structure includes the essential elements that define the document and its content. Here's a breakdown of the key components:</p>
+            <ul>
+        <li><code>&lt;<b>!DOCTYPE html</b>&gt;</code>: This declaration defines the document type and version of HTML being used. It helps browsers understand how to render the page correctly.</li>
+        <li><code>&lt;<b>html&gt;</b></code>: The root element that wraps all the content of the HTML document. It can include attributes like <code>lang</code> to specify the language of the content.</li>
+        <li><code>&lt;<b>head&gt;</b></code>: This section contains meta-information about the document, such as its title, character encoding, and links to stylesheets or scripts.</li>
+        <li><code>&lt;<b>body&gt;</b></code>: This is where the visible content of the webpage goes, including text, images, links, and other media.</li>
+        <li><code>&lt;<b>title&gt;</b></code>: Located within the <code>&lt;head&gt;</code>, this element sets the title of the webpage, which appears in the browser tab and search engine results.</li>
+        <li><code>&lt;<b>meta charset="UTF-8"&gt;</b></code>: This tag specifies the character encoding for the document, ensuring that text is displayed correctly across different browsers and devices.</li>
+        <li><code>&lt;<b>meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b></code>: This tag is crucial for responsive design, as it controls how the webpage is displayed on different screen sizes, particularly on mobile devices.</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Common HTML Elements</h3>
+    <div id="accordion">
+        <h3>Block-Level Elements</h3>
+        <div>
+            <p>Tags like <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, and <code>&lt;p&gt;</code> take up the full width of their parent element.</p>
+        </div>
+        <h3>Inline Elements</h3>
+        <div>
+            <p>Tags like <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;strong&gt;</code> only take up as much width as necessary.</p>
+        </div>
+        <h3>Semantic Elements</h3>
+        <div>
+            <p>Tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> provide meaning and structure to the content.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <p>&copy; 2026 Kevin Teah Enterprises. All rights reserved.</p>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/quest_logic.js"></script>
+</body>
+</html>

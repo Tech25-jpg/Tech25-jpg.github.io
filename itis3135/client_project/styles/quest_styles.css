@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #c6dabf;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    min-height: 70vh;
+}
+
+nav ul {
+    background: #00703c;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/* Box Model Demo for CSS.html */
+.box-model-demo {
+    border: 2px dashed #333;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content-label {
+    background-color: #fff;
+    border: 1px solid #00703c;
+    padding: 10px;
+}
+
+/* Interactive Playground */
+.sample-box {
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #ddd;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.sample-box:hover {
+    background-color: #00703c;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid #00703c;
+}
+
+.hidden-dialog {
+    display: none;
+}
+
+ui-dialog {
+    background-color:#f9f9f9;
+    border: 2px solid #00703c;
+    border-radius: 8px;
+    padding: 0px;
+}
+
+/* Title Bar */
+.ui-dialog-titlebar {
+    background-color: #00703c;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #005a29;
+    font-weight: bold;
+}
+
+.ui-dialog-titlebar-close {
+    display: none;
+}
+
+/* Content Area */
+.ui-dialog-content {
+    background-color: #f9f9f9;
+    color: #005a29;
+    padding: 20px;
+}
+
+/* Overlay */
+.ui-widget-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+/* JS.html CSS */
+.output-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color:  #f4f4f4;
+    border-left: 5px solid #00703c;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 50px;
+}
+
+.quest-button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color:#00703c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quest-button:hover {
+    background-color: #005a30;
+}
+
+/* For Toggle Color */
+.output-box {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    transition: all 0.4s ease;
+}
+
+/* For Toggle Color - When clicked */
+.color-active {
+    background-color: #00703c;
+    color: white;
+    border-left-color: #ffce11;
+}
+
+/* Quiz Results */
+#quiz-result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 8px solid #00703c;
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#quiz-result p {
+    margin-bottom: 10px;
+}
+
+#quiz-result strong {
+    font-size: 1.2em;
+}
+
+/* Try Again Button - Quiz */
+#reset-btn {
+    background-color: #666;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#reset-btn:hover {
+    background-color: #444;
+}
+
+#hero-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
