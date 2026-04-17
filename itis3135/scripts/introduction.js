@@ -50,6 +50,9 @@ document.getElementById('add-course').addEventListener('click', () => {
         document.querySelector("h3").style.display = "none";
         document.getElementById("page-header").innerText = "Introduction Page";
 
+        // Generate HTML output
+        const CaptionText = "Kevin Teah | Keen Turkey";
+
         // Gather link values
         const linkedin = document.getElementById("link-linkedin").value;
         const githubIo = document.getElementById("link-github-io").value;
@@ -61,8 +64,8 @@ document.getElementById('add-course').addEventListener('click', () => {
         resultContainer.innerHTML = `
         <h3>${firstName} ${lastName} ${divider} ${mascotAdjective} ${mascotAnimal}</h3>
         <figure>
-            <img src= "1738707586340.jpg" id="intro-image" alt="Headshot" style="max-width: 400px;">
-            <figcaption>${document.getElementById("live-caption").innerText}</figcaption>
+            <img src="images/keen_turkey.jpg" id="intro-image" alt="Mascot" style="max-width: 400px;">
+            <figcaption>${CaptionText}</figcaption>
         </figure>
         <ul>
             <li><strong>Personal Background:</strong> ${document.getElementById("personal-background").value}</li>

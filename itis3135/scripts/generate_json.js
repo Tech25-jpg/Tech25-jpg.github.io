@@ -20,19 +20,25 @@ document.getElementById('gen-json').addEventListener('click', () => {
     "courses": [],
     "links": [
         {"name": "LinkedIn", "href": document.getElementById('link-linkedin').value },
-        {"name": "Github", "href": document.getElementById('link-github').value }
+        {"name": "Github", "href": document.getElementById('link-github-io').value }
     ]
 };
 
 // Gather dynamic courses
 // loops through every course div added dynamically
 const courseEntries = document.querySelectorAll('.course-entry');
+
 courseEntries.forEach((entry) => {
+    const dept = entry.querySelector('.dept').value;
+    const number = entry.querySelector('.course-num').value;
+    const name = entry.querySelector('.course-name').value;
+    const reason = entry.querySelector('.course-reason').value;
+    
     introData.courses.push({
-        "department": entry.querySelector('.dept').value,
-        "number": entry.querySelector('.course-num').value,
-        "name": entry.querySelector('.name').value,
-        "reason": entry.querySelector('.reason').value
+        "department": dept,
+        "number": number,
+        "name": name,
+        "reason": reason
     });
 });
 

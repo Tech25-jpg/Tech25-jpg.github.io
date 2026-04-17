@@ -9,36 +9,36 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div data-include="components/header.html"></div>
+        </nav>  
+    </header>
 <main>
     <h2 id="page-header">Introduction Form</h2>
     <h3>Please submit the following information below.</h3>
 
-    <figure>
-        <img src="/1738707586340.jpg" alt="Professional headshot">
-        <figcaption id="live-caption">Kevin Teah, creator of this form</figcaption>
-    </figure>
-
     <form id="intro-form">
         <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" value="" required placeholder="Enter first name">
+        <input type="text" id="first-name" value="Kevin" required="">
 
         <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" value="" required placeholder="Enter last name">
+        <input type="text" id="last-name" value="Teah" required="">
 
         <label for="ack-statement">Acknowledgement Statement:</label>
         <textarea id="ack-statement" required>I, [Name], acknowledge the information below is factual.</textarea>
 
         <label for="ack-date">Acknowledgement Date:</label>
-        <input type="date" id="ack-date" value="" required>
+        <input type="date" id="ack-date" value="2026-01-20" required>
 
         <label for="divider">Mascot Divider:</label>
-        <input type="text" id="divider" value="" required placeholder="ex. (ie, ~, |, ♥️, etc)">
+        <input type="text" id="divider" value="♥️" required="">
 
         <label for="mascot-adj">Mascot Adjective:</label>
-        <input type="text" id="mascot-adj" value="" required placeholder="ex. Keen">
+        <input type="text" id="mascot-adj" value="Keen" required="">
 
         <label for="mascot-animal">Mascot Animal:</label>
-        <input type="text" id="mascot-animal" value="" required placeholder="ex. Turkey">
+        <input type="text" id="mascot-animal" value="Turkey" required="">
         
         <label for="user-image">Picture:</label>
         <input type="file" id="user-image" accept="image/*">
@@ -47,46 +47,46 @@
         <textarea id="personal-statement" required>For what courage takes to stand, must also take to listen.</textarea>
 
         <label for="personal-background">Personal Background:</label>
-        <textarea id="personal-background" required></textarea>
+        <textarea id="personal-background" required>I like reading books and playing video games.</textarea>
 
         <label for="professional-background">Professional Background:</label>
-        <textarea id="professional-background" required> </textarea>
+        <textarea id="professional-background" required>I am a road-to-hire intern; a nonprofit organization that dedicates to college readiness of rising college students.</textarea>
 
         <label for="academic-background">Academic Background:</label>
-        <textarea id="academic-background" required> </textarea>
+        <textarea id="academic-background" required>I am a student at the University of North Carolina at Charlotte.</textarea>
 
 
         <div id="course-container">
             <h4>Courses</h4>
             <div class="course-entry">
-                <input type="text" id="Department" class="dept" value="" required placeholder="ex. ITIS">
-                <input type="text" id="Number" class="course-num" value="" required placeholder="ex. 3135">
-                <input type="text" id="Name" class="course-name" value="" required placeholder="Web Development">
-                <input type="text" id="Reason" class="course-reason" value="" required placeholder="major requirement">
+                <input type="text" id="Department" class="dept" value="ITIS" required placeholder="ex. ITIS">
+                <input type="text" id="Number" class="course-num" value="3135" required placeholder="ex. 3135">
+                <input type="text" id="Name" class="course-name" value="Web Development" required placeholder="Web Development">
+                <input type="text" id="Reason" class="course-reason" value="major requirement" required placeholder="major requirement">
             </div>
         </div>
         <button type="button" id="add-course">Add Another Course</button>
 
         <label for="user-quote">Favorite Quote:</label>
-        <input type="text" id="user-quote" value="" required placeholder="You only fail if you stop writing.">
+        <input type="text" id="user-quote" value="You only fail if you stop writing." required="">
 
         <label for="quote-author">Quote Author:</label>
-        <input type="text" id="quote-author" value="" required placeholder="Ray Bradbury">
+        <input type="text" id="quote-author" value="Ray Bradbury" required="">
 
         <label for="link-linkedin">LinkedIn URL:</label>
-        <input type="url" id="link-linkedin" value="" required placeholder="https://www.linkedin.com/in/kevin-teah-90b1a0332/">
+        <input type="url" id="link-linkedin" value="https://www.linkedin.com/in/kevin-teah-90b1a0332/" required="">
 
-        <label for="link-github">Github URL:</label>
-        <input type="url" id="link-github-io" value="" required placeholder="https://github.com/Tech25-jpg/Tech25-jpg.github.io">
+        <label for="link-github-io">Github URL:</label>
+        <input type="url" id="link-github-io" value="https://github.com/Tech25-jpg/Tech25-jpg.github.io" required="">
 
         <label for="link-personal-webpage">Personal Webpage URL:</label>
-        <input type="url" id="link-personal-webpage" value="" required placeholder="https://webpages.charlotte.edu/kteah/">
+        <input type="url" id="link-personal-webpage" value="https://webpages.charlotte.edu/kteah/" required="">
 
         <label for="link-fcc">freeCodeCamp URL:</label>
-        <input type="url" id="link-fcc" value="" required placeholder="https://www.freecodecamp.org/kteah25">
+        <input type="url" id="link-fcc" value="https://www.freecodecamp.org/kteah25" required="">
 
         <label for="link-github">Github Profile URL:</label>
-        <input type="url" id="link-github" value="" required placeholder="https://github.com/Tech25-jpg">
+        <input type="url" id="link-github" value="https://github.com/Tech25-jpg" required="">
 
     <div class="form-controls">
         <button type="submit">Submit</button>

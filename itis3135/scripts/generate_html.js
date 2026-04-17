@@ -19,10 +19,20 @@ const generateHTML = () => {
 <section>
     <h3>${firstName}'s Introduction</h3>
     <p>Personal Statement: ${document.getElementById('personal-statement').value}</p>
+    <p>Professional Statement: ${document.getElementById('professional-background').value}</p>
+    <p>Academic Background: ${document.getElementById('academic-background').value}</p>
+    <p>Personal Background: ${document.getElementById('personal-background').value}</p>
 </section>`;
 
-// Code display using <pre> and <code>
 const resultArea = document.getElementById('result-container');
-resultArea.innerHTML = `<pre><code>${escapeHTML(hmtlString)}</code></pre>`;
+const formElement = document.getElementById('intro-form');
+formElement.style.display = 'none';
+
+// Code display using <pre> and <code>
+resultArea.innerHTML = `<pre><code>${escapeHTML(hmtlString)}</code></pre>
+<br>
+<a href="intro_form.html">Reset and Try Again</a>`;
 hljs.highlightAll();
 };
+
+document.getElementById('gen-html').addEventListener('click', generateHTML);
