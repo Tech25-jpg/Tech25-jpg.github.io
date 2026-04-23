@@ -15,7 +15,7 @@ const firstName = document.getElementById('first-name').value;
 const lastName = document.getElementById('last-name').value;
 const mascotAdj = document.getElementById('mascot-adj').value;
 const mascotAnimal = document.getElementById('mascot-animal').value;
-const quote = document.getElementById('quote').value;
+const quote = document.getElementById('user-quote').value;
 const quoteAuthor = document.getElementById('quote-author').value;
 
 const header = document.getElementById('page-header');
