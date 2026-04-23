@@ -22,7 +22,7 @@ const header = document.getElementById('page-header');
 header.innerText = "Introduction HTML";
 
     // Handle the Course List
-    const courseInputs = document.querySelectorAll('.course-input'); 
+    const courseInputs = document.querySelectorAll('.course-name'); 
     let courseListItems = "";
     
     courseInputs.forEach((input) => {
