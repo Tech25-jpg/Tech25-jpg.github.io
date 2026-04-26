@@ -1,26 +1,5 @@
 console.log("Web Dev Quest: Active");
 
-// Quiz Validation Logic
-function validateQuiz() {
-    const userInput = document.getElementById("quiz-answer").value;
-if (userInput === "") {
-        alert("Please enter an answer before submitting.");
-        return false;
-}
-return true;
-}
-
-// Initiliaze jQuery
-$(document).ready(function() {
-
-    if ($("#accordion").length) {
-        $("#accordion").accordion({
-            collapsible: true,
-            heightStyle: "content"
-        });
-    }
-});
-
 function loadDailyTip() {
     const tips = [
         "Tip 1: Use semantic HTML tags for better accessibility.",
@@ -44,6 +23,27 @@ function loadDailyTip() {
 window.onload = function() {
     loadDailyTip();
 };
+
+// Quiz Validation Logic
+function validateQuiz() {
+    const userInput = document.getElementById("quiz-answer").value;
+if (userInput === "") {
+        alert("Please enter an answer before submitting.");
+        return false;
+}
+return true;
+}
+
+// Initiliaze jQuery
+$(document).ready(function() {
+
+    if ($("#accordion").length) {
+        $("#accordion").accordion({
+            collapsible: true,
+            heightStyle: "content"
+        });
+    }
+});
 
 // CSS.html Playground Interactivity
 // ID Selector Pop-up

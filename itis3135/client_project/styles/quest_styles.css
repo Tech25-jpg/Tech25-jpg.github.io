@@ -243,3 +243,32 @@ header nav ul li a.active {
     border-bottom: 3px solid #ffca18;
     font-weight: bold;
 }
+
+/* Styling for the index.html section and aside */
+.quest-overview, #daily-tip {
+    border: 2px solid #00703c; /* UNCC Green */
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Specific accent for the Tip */
+#daily-tip {
+    border-style: dashed; /* Makes the tip look different from main content */
+    border-color: #ffca18; /* Gold accent */
+    background-color: #fffdf2;
+}
+
+/* Greetings section on index.html */
+#hero {
+    border: 3px solid #00703c;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
