@@ -1,3 +1,4 @@
+// April 23, 2026 - Updated to include the missing HTML elements
 function escapeHTML(str) {
     return str.replace(/[&<>"']/g, (m) => {
         return {

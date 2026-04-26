@@ -24,6 +24,26 @@
         <li><code>&lt;<b>meta charset="UTF-8"&gt;</b></code>: This tag specifies the character encoding for the document, ensuring that text is displayed correctly across different browsers and devices.</li>
         <li><code>&lt;<b>meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b></code>: This tag is crucial for responsive design, as it controls how the webpage is displayed on different screen sizes, particularly on mobile devices.</li>
     </ul>
+    <p>For example:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;p&gt;Welcome to my website!&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2023 My Website. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 </section>
 
 <section>
@@ -42,6 +62,98 @@
             <p>Tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> provide meaning and structure to the content.</p>
         </div>
     </div>
+</section>
+
+<section>
+    <h3>Void Elements</h3>
+    <p>In HTML, <strong>Void Elements</strong> are those that do not require a closing tag, as they can close by themselves. They also cannot take on content within them.</p>
+    <p>Some common void elements include:</p>
+    <ul>
+        <li><code>&lt;img&gt;</code>: Used to embed images in a webpage. It requires the <code>src</code> attribute to specify the image source and the <code>alt</code> attribute for alternative text.</li>
+        <li><code>&lt;br&gt;</code>: Represents a line break, allowing you to start a new line of text without creating a new paragraph.</li>
+        <li><code>&lt;hr&gt;</code>: Creates a horizontal rule, often used to separate content sections visually.</li>
+        <li><code>&lt;input&gt;</code>: Used in forms to create interactive controls like text fields, checkboxes, and buttons. It requires the <code>type</code> attribute to specify the type of input.</li>
+        <li><code>&lt;meta&gt;</code>: Provides metadata about the HTML document, such as character encoding, viewport settings, and SEO information. It is placed within the <code>&lt;head&gt;</code> section.</li>
+        <li><code>&lt;link&gt;</code>: Used to link external resources like stylesheets or prefetching resources. It also belongs in the <code>&lt;head&gt;</code>.</li>
+    </ul>
+    <p>For example:</p>
+    <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Void Elements&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+    <pre><code>&lt;p&gt;First line of text&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;Second line of text&lt;/p&gt;
+&lt;hr&gt;
+&lt;img src="images/coding.png" alt="Web Icon"&gt;</code></pre>
+    <p>In the example above, the <code>&lt;br&gt;</code> tag creates a line break between the first and second lines of text. The <code>&lt;hr&gt;</code> tag adds a horizontal rule to separate content sections. The <code>&lt;img&gt;</code> tag embeds an image with the specified source and alternative text.</p>
+</section>
+
+<section>
+    <h3>HTML Comments</h3>
+    <p>Comments are invsible notes that you can add to your HTML code to explain what certain sections do or to leave reminders for yourself or other developers. They are not displayed in the browser and are ignored by the HTML parser.</p>
+    <p>To create a comment in HTML, you use the following syntax:</p>
+    <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+    <p>Comments can be used for various purposes, such as:</p>
+    <ul>
+        <li>Explaining the purpose of a section of code.</li>
+        <li>Leaving notes for other developers who may work on the code in the future.</li>
+        <li>Temporarily disabling code without deleting it.</li>
+    </ul>
+    <p>For different coding languages, comments may have different syntax, but the concept remains the same. Other examples of syntaxes include:</p>
+    <pre><code>/* This is a comment in CSS */
+// This is a comment in JavaScript</code></pre>
+    <p>Using comments effectively can improve the readability and maintainability of your code, making it easier for you and others to understand the structure and functionality of your HTML documents.</p>
+</section>
+
+<section>
+    <h3>Relative and Absolute Paths</h3>
+    <p>When linking to resources like images, stylesheets, or other pages, you can use either relative or absolute paths.</p>
+    <p><strong>Relative Paths</strong> are defined in relation to the current document. They are shorter and more flexible, especially when moving files around within the same project. For example, if your HTML file is in the root directory and you want to link to an image in a folder called "images", you would use a relative path like <code>images/photo.jpg</code>.</p>
+    <p><strong>Absolute Paths</strong> specify the full URL to the resource, including the protocol <pre><code>http://https://github.com/</code></pre> or <pre><code>https://https://github.com/</code></pre> They are used when linking to external resources or when you want to ensure that the link works regardless of the location of the HTML file. For example, <code>https://www.example.com/images/photo.jpg</code> is an absolute path.</p>
+    <p>Using relative paths can make your project more portable, while absolute paths are necessary when linking to resources that are not part of your project. It's important to choose the appropriate type of path based on your specific needs and the structure of your project.</p>
+    <p>However, you must be careful when using absolute paths, as they can make your project less portable and harder to maintain if the domain or structure of the linked resources changes. Absolute paths are lead by the protocol: <pre><code>itis3135/client_project/css.html</code></pre> or <pre><code>itis3135/components/footer.html</code></pre> While relative paths are lead by forward slashes: <pre><code>/itis3135/components/header.html</code></pre> or <pre><code>/itis3135/client_project/structure.html</code></pre></p>
+    <p>The <strong>forward slash</strong> at the beginning of a path indicates an absolute path from the root directory of the website. However, keep in mind that you won't be able to call the root directory directly from a relative path as it will not be able to locate it.</p>
+</section>
+
+<section>
+    <h3>HTML Validation</h3>
+    <p>HTML validation is the process of checking your HTML code against a set of rules defined by the <strong>World Wide Web Consortium (W3C)</strong> to ensure that it is well-formed and follows best practices. Validating your HTML can help you identify and fix errors, improve accessibility, and ensure that your website works correctly across different browsers and devices.</p>
+    <p>You can use online tools like the W3C Markup Validation Service to validate your HTML code. Simply <strong>enter the URL of your webpage or upload your HTML file, and the tool will analyze your code for any errors or warnings</strong>. It will provide you with a report detailing any issues found, along with suggestions for how to fix them.</p>
+    <p>Regularly validating your HTML code is an important step in maintaining a high-quality website. It can help you catch mistakes early on, improve the user experience, and ensure that your site is accessible to all users.</p>
+</section>
+
+<section id="quiz-container">
+    <h3>Module Quiz</h3>
+    <p>Test your knowledge of HTML structure with the following quiz. Answer the questions to see how well you understand the concepts covered in this module.</p>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. What is the purpose of the <code>&lt;head&gt;</code> element in an HTML document?</p>
+            <label><input type="radio" name="q1" value="a"> To contain the visible content of the webpage</label><br>
+            <label><input type="radio" name="q1" value="b"> To provide metadata and links to resources</label><br>
+            <label><input type="radio" name="q1" value="c"> To define the structure of the webpage</label><br>
+        </div>
+
+        <div class="question">
+            <p>2. Which of the following is a void element in HTML?</p>
+            <label><input type="radio" name="q2" value="a"> &lt;div&gt;</label><br>
+            <label><input type="radio" name="q2" value="b"> &lt;img&gt;</label><br>
+            <label><input type="radio" name="q2" value="c"> &lt;p&gt;</label><br>
+        </div>
+
+        <div class="question">
+            <p>3. What is the correct syntax for an HTML comment?</p>
+            <label><input type="radio" name="q3" value="a"> &lt;!-- This is a comment --&gt;</label><br>
+            <label><input type="radio" name="q3" value="b"> &lt;# This is a comment #&gt;</label><br>
+            <label><input type="radio" name="q3" value="c"> &lt;/* This is a comment */&gt;</label><br>
+        </div>
+
+        <br>
+         <button type="button" onclick="validateHTMLQuiz()">Submit Quiz</button>
+         <button type="button" onclick="resetQuiz()">Retake Quiz</button>
+         <div id="quiz-result" class="quiz-container"></div>
+    </form>
 </section>
 
 <footer>

@@ -179,3 +179,67 @@ ui-dialog {
     margin: 0 auto 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
+
+/* CSS.html Example Section Styling */
+section {
+    margin-bottom: 50px;
+}
+
+code {
+    background-color: #eee;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff1053;
+}
+
+pre {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0cce6b;
+    overflow-x: auto;
+}
+
+/* Locked Navigation Links (when yet to be unlocked) */
+.locked {
+    color: #888;
+    cursor: not-allowed;
+    text-decoration: none;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.locked:after {
+    content: " (🔒)";
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Navigation Link Hover Effect */
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #005a29;
+    color: #ffca18;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul li a.locked:hover {
+    background-color: transparent;
+    color: #ffffff;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+header nav ul li a.active {
+    border-bottom: 3px solid #ffca18;
+    font-weight: bold;
+}

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS - Web Dev Quest</title>
     <link rel="icon" type="image/png" href="images/coding.png">
-    <link rel="stylesheet" href="styles/quest_styles.css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles/quest_styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
 <body>
     <header>
@@ -24,6 +25,7 @@
         <div class="border">Border</div>
         <div class="margin">Margin</div>
     </div>
+    <p>The <strong>Box Model</strong> is how CSS controls spacing, along with what goes inside the element. <b>Padding</b> is the space between the content and the border (around the text), and <b>Margin</b> is the space outside the border (pushing the other boxes away).</p>
 </section>
 
 <section>
@@ -45,6 +47,116 @@
     <div id="dialog-type" class="hidden-dialog" title="Type Selectors">
         <p>Type selectors target elements based on their HTML tag name. For example, <code>div</code> will select all div elements.</p>
     </div>
+    
+    <section>
+        <h3>Understanding CSS Syntax</h3>
+        <p>CSS syntax consists of selectors and declarations. Selectors are used to target HTML elements, while declarations define the styles for those elements.</p>
+        <p>A CSS declaration is made up of a property and a value, separated by a colon (;). For example, <code>color: red;</code> sets the text color to red. Multiple declarations can be grouped together within curly braces to form a CSS rule.</p>
+
+        <pre>
+    h1 {
+        color: blue; /* Property: color, Value: blue */
+        font-size: 24px; /* Property: font-size, Value: 24px */
+        text-align: center; /* Property: text-align, Value: center */
+    }
+        </pre>
+        <p>In the example above, the <code>h1</code> selector targets all heading level 1 elements, <code>color</code> is the property, <code>blue</code> is the value. The declarations within the curly braces define their styles.</p>
+        <p>Writing and implementing CSS rules is a fundamental skill for creating visually appealing websites. It is also essential for responsive design as CSS allows for flexible layouts that adapt to different screen sizes (PC, Mobile, etc). Without CSS, web pages would be plain and unattractive for consumers to utilize.</p>
+        <p>Like CSS, there are rules that follow strict anatomies in order for them to be displayed correctly. Missing a single semicolon (;) or bracket can spell disaster for the rest of your CSS layout. This is why it is important to differentiate and properly structure your CSS code in case you take on a client of your own someday.</p>
+    </section>
+
+    <section>
+        <h3>Text and Fonts</h3>
+        <p>CSS provides various properties to control the appearance of text and fonts. You can set the font family, size, weight, style, and more.</p>
+        <p>For example, the <code>font-family</code> property allows you to specify the typeface for your text. You can use a specific font name or a generic family like <code>serif</code>, <code>sans-serif</code>, or <code>monospace</code>. The <code>font-size</code> property controls the size of the text, while <code>font-weight</code> can make the text bold or light.</p>
+        <p>Here's an example of how to style text using CSS:</p>
+        <pre>
+    p {
+        font-family: Arial, sans-serif; /* Sets the font family */
+        font-size: 16px; /* Sets the font size */
+        font-weight: bold; /* Makes the text bold */
+        color: #333; /* Sets the text color */
+    }
+        </pre>
+    </section>
+
+    <section>
+        <h3>Inline CSS</h3>
+        <p>Inline CSS is used to apply styles directly to an HTML element using the <code>style</code> attribute.</p>
+        <p>To use the method of inline CSS, simply add a <code>style</code> attribute to the HTML element you want to style.</p>
+        <pre>
+    &lt;h1 style="color: blue; font-size: 24px;"&gt;Heading&lt;/h1&gt;
+        </pre>
+        <p>In the example above, the <code>style</code> attribute is used to set the color and font size of the heading. While inline CSS can be useful for quick styling, it is generally recommended to use external or internal CSS for better maintainability and separation of concerns.</p>
+        <p>Think of it as attaching a 'sticky note' to a specific item. It will only affect one specific element and ignore the others.</p>
+        <p>Inline CSS can be useful for quick styling, but it is generally recommended to use external or internal CSS for better maintainability and separation of concerns. This is because inline styles can make your HTML code cluttered and harder to read, especially if you have a lot of styles applied to different elements. It should only be used sparingly.</p>
+    </section>
+
+    <section>
+        <h3>External CSS</h3>
+        <p>External CSS is a separate file that contains all the CSS rules for a website. It is linked to the HTML document using the <code>&lt;link&gt;</code> element in the <code>&lt;head&gt;</code> section.</p>
+        <p>To create an external CSS file, simply create a new file with a <code>.css</code> extension (e.g., styles.css, default.css) and add your CSS rules to it. Then, link the CSS file to your HTML document using the following code:</p>
+        <pre>
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+        </pre>
+        <p>You can connect the file to your HTML document by placing it in the same directory or specifying the correct path whether absolute or relative. By doing so, it will make your site have easier access to the color variety and remain consistent to its branding.</p>
+        <p>External CSS can be used for:</p>
+        <ul>
+            <li>Styling multiple pages consistently</li>
+            <li>Improving maintainability and organization</li>
+            <li>Enhancing performance through caching (faster loading times)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Internal CSS</h3>
+        <p>Internal CSS is defined within the <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> section of the HTML document. It allows you to write CSS rules that apply to the entire document without needing an external file.</p>
+        <p>To use internal CSS, simply add a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> section and write your CSS rules inside it. For example:</p>
+        <pre>
+    &lt;style&gt;
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+    &lt;/style&gt;
+        </pre>
+        <p>Internal CSS is useful for:</p>
+            <ul>
+                <li>Applying styles to a single page</li>
+                <li>Testing and prototyping styles quickly</li>
+                <li>Overriding external CSS rules for specific pages</li>
+            </ul>
+    </section>
+
+    <section id="quiz-container">
+        <h3>CSS Quiz</h3>
+        <p>Test your knowledge of CSS with this quick quiz! Answer the following questions to see how well you understand the concepts covered in this section.</p>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. What does CSS stand for?</p>
+                <label><input type="radio" name="css-q1" value="a"> Computer Style Sheets</label><br>
+                <label><input type="radio" name="css-q1" value="b"> Cascading Style Sheets</label><br>
+                <label><input type="radio" name="css-q1" value="c"> Creative Style Sheets</label><br>
+            </div>
+            <div class="quiz-question">
+                <p>2. Which of the following is a valid CSS property for changing the text color?</p>
+                <label><input type="radio" name="css-q2" value="a"> font-color</label><br>
+                <label><input type="radio" name="css-q2" value="b"> text-color</label><br>
+                <label><input type="radio" name="css-q2" value="c"> color</label><br>
+            </div>
+            <div class="quiz-question">
+                <p>3. How do you link an external CSS file to an HTML document?</p>
+                <label><input type="radio" name="css-q3" value="a"> &lt;link rel="stylesheet" href="styles.css"&gt;</label><br>
+                <label><input type="radio" name="css-q3" value="b"> &lt;style src="styles.css"&gt;</label><br>
+                <label><input type="radio" name="css-q3" value="c"> &lt;css link="styles.css"&gt;</label><br>
+            </div>
+            <br>
+
+            <button type="button" onclick="validateCSSQuiz()">Submit Quiz</button>
+            <button type="button" onclick="resetQuiz()">Retake Quiz</button>
+            <div id="quiz-result" class="quiz-container"></div>
+        </form>
+    </section>
 
 </main>
     <footer>
