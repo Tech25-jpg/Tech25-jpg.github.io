@@ -1,3 +1,7 @@
+/* Quest Logic for Web Dev Quest - ITIS 3135 Client Project
+Author: Kevin Teklo Teah
+Course: ITIS 3135
+Purpose: This script handles the module unlocking logic, jQuery Initialization, and dynamic tip generation */
 console.log("Web Dev Quest: Active");
 
 function loadDailyTip() {

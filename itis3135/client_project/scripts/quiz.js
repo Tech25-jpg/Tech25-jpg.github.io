@@ -1,3 +1,7 @@
+/* Quiz Validation and Reset Logic for Web Dev Quest - ITIS 3135 Client Project
+Author: Kevin Teklo Teah
+Course: ITIS 3135
+Purpose: This script handles the quiz validation logic, score calculation, feedback generation, and quiz reset functionality for the Web Dev Quest project. */
 function validateQuiz() {
     const resultDiv = document.getElementById("quiz-result");
     // values
