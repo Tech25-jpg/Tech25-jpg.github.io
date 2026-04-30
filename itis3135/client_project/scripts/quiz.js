@@ -36,10 +36,10 @@ function validateQuiz() {
         feedback += "<p>Q1: Incorrect. The correct answer is A) HyperText Markup Language.</p>";
     }
 
-    if (q2 === "c") {
+    if (q2 === "b") {
         score++;
     } else {
-        feedback += "<p>Q2: Incorrect. The correct answer is C) &lt;href&gt;.</p>";
+        feedback += "<p>Q2: Incorrect. The correct answer is B) &lt;a&gt;.</p>";
     }
 
     if (q3 === "b") {
@@ -84,10 +84,10 @@ function validateQuiz() {
         feedback += "<p>Q9: Incorrect. The correct answer is A) &lt;!-- This is a comment --&gt;.</p>";
     }
 
-    if (q10 === "b") {
+    if (q10 === "a") {
         score++;
     } else {
-        feedback += "<p>Q10: Incorrect. The correct answer is B) &lt;ul&gt;.</p>";
+        feedback += "<p>Q10: Incorrect. The correct answer is A) &lt;li&gt;.</p>";
     }
 
     if (q11 === "c") {

@@ -235,7 +235,7 @@ function validateJSQuiz() {
         resultDiv.innerHTML = "<p style='color: red;'>Please answer all questions before submitting.</p>";
         return;
     }
-    if (q1.value === "a" && q2.value === "c" && q3.value === "b") {
+    if (q1.value === "a" && q2.value === "c" && q3.value === "a") {
         resultDiv.innerHTML = `
         <div class="quiz-success-message" style="border: 2px solid green; padding: 20px; border-radius: 10px; background-color: #d4edda; margin-top: 15px;">
             <p style="color: green; font-weight: bold;">Congratulations! You got all answers correct.</p>
