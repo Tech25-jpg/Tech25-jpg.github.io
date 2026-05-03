@@ -15,11 +15,11 @@
         <div data-include="components/quest_nav.html"></div>
     </header>
     
-/* JavaScript Module for Web Dev Quest - ITIS 3135 Client Project
-Author: Kevin Teklo Teah
-Course: ITIS 3135
-Purpose: This module provides an introduction to JavaScript, including interactive buttons that demonstrate JavaScript functionality, and a quiz to test the user's knowledge of JavaScript basics. It also includes logic for validating quiz answers and providing feedback. */
-    
+<!-- JavaScript Module for Web Dev Quest - ITIS 3135 Client Project -->
+<!-- Author: Kevin Teklo Teah -->
+<!-- Course: ITIS 3135 -->
+<!-- Purpose: This module provides an introduction to JavaScript, including interactive buttons that demonstrate JavaScript functionality, and a quiz to test the user's knowledge of JavaScript basics. It also includes logic for validating quiz answers and providing feedback. -->
+
 <main>
         <section>
             <h3>JavaScript: The Dynamic Dynamo</h3>
@@ -38,7 +38,49 @@ Purpose: This module provides an introduction to JavaScript, including interacti
             </div>
             </div>
         </section>
+        
+        <section>
+            <h3>Core Concepts</h3>
+            <ul>
+                <li><strong>Variables:</strong> Containers for storing data values. In JavaScript, you can declare variables using <code>var</code>, <code>let</code>, or <code>const</code>.</li>
+                <li><strong>Functions:</strong> Blocks of code designed to perform a particular task. They are executed when something invokes them (calls them).</li>
+                <li><strong>Events:</strong> Actions that occur in the browser, such as clicks, mouse movements, or keyboard input. JavaScript can respond to these events to create interactive experiences.</li>
+                <li><strong>DOM Manipulation:</strong> The ability to change the structure, style, and content of a web page dynamically using JavaScript.</li>
+            </ul>
+        </section>
 
+        <section>
+            <h3>Variables</h3>
+            <p>Variables in JavaScript are used to store data values. They can be declared using <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+            <p><code>var</code> is function-scoped and can be redeclared and updated. <code>let</code> is block-scoped and can be updated but not redeclared. <code>const</code> is block-scoped and cannot be updated or redeclared.</p>
+        </section>
+
+        <section>
+            <h3>Functions</h3>
+            <p>Functions are reusable blocks of code that perform a specific task. They can take parameters and return values. Functions can be defined using function declarations, function expressions, or arrow functions.</p>
+            <p>Example of a function declaration:</p>
+            <pre><code>function greet(name) {
+    return "Hello, " + name + "!";
+}</code></pre>
+        </section>
+
+        <section>
+            <h3>Events</h3>
+            <p>Events are actions that occur in the browser, such as clicks, mouse movements, or keyboard input. JavaScript can respond to these events using event listeners.</p>
+            <p>Example of an event listener:</p>
+            <pre><code>document.getElementById("greet-btn").addEventListener("click", function() {
+    // Code to execute when the button is clicked
+});</code></pre>
+        </section>
+
+        <section>
+            <h3>DOM Manipulation</h3>
+            <p>DOM manipulation allows you to change the structure, style, and content of a web page dynamically using JavaScript. You can select elements, modify their attributes, and update their content.</p>
+            <p>Example of DOM manipulation:</p>
+            <pre><code>document.getElementById("logic-output").innerText = "Button clicked!";</code></pre>
+        </section>
+
+        <p>With these core concepts in mind, you're ready to complete the quiz below to see JavaScript in action!</p>
     <section id="quiz-container">
         <h3>JavaScript Quiz</h3>
         <p>Test your knowledge of JavaScript basics with the quiz below!</p>
