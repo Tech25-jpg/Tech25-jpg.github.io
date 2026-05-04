@@ -126,3 +126,13 @@ function resetQuiz() {
 
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// Triggers AJAX and localStorage to signify that the user has completed the final quiz.
+function checkQuizResults () {
+    let score = calculateScore();
+
+    if (score === 100) {
+        alert("Quest Finished! All content accessed!");
+        window.completeQuest();
+    }
+}

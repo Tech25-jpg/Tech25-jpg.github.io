@@ -269,7 +269,10 @@ window.addEventListener('load', checkProgress);
 document.addEventListener('DOMContentLoaded', function() {
     const isCompleted = localStorage.getItem('webDevQuestCompleted');
     if (isCompleted === 'true') {
+        console.log("Quest Status: Completed. Unlocking all content...");
         unlockAllContent();
+    } else {
+        console.log("Quest status: Incomplete. Content remains locked.");
     }
 });
 
