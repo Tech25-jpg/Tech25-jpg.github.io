@@ -264,3 +264,69 @@ function resetQuiz() {
 }
 
 window.addEventListener('load', checkProgress);
+
+// AJAX Logic to Load Data from JSON
+document.addEventListener('DOMContentLoaded', function() {
+    const isCompleted = localStorage.getItem('webDevQuestCompleted');
+    if (isCompleted === 'true') {
+        unlockAllContent();
+    }
+});
+
+// Function to unlock all content if the quests are completed.
+function unlockAllContent() {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'data.json', true);
+
+    xhr.onload = function() {
+        if (this.status === 200) {
+            const data = JSON.parse(this.responseText);
+
+            // Update Nav Bar to show all unlocked links
+            const navLinks = document.querySelectorAll('#primary-nav a');
+            navLinks.forEach(link => {
+                link.classList.remove('locked');
+                link.classList.add('unlocked');
+            });
+        // Update UI to show completion status
+        const statusBox = document.getElementById('quest-status');
+        if (statusBox) {
+            statusBox.innerHTML = `<div class="quest-completion-message" style="border: 2px solid green; padding: 20px; border-radius: 10px; background-color: #d4edda;">
+                <p style="color: green; font-weight: bold;">${data.message}</p>
+                <p>All modules are now unlocked. Feel free to explore the resources!</p>`
+            }
+        }
+    };
+    xhr.send();
+}
+
+// Call this function when the user completes the final quiz to set the completion status in localStorage
+window.completeQuest = function() {
+    localStorage.setItem('webDevQuestCompleted', 'true');
+    unlockAllContent();
+};
+ // For any errors with the navigation bar:
+document.addEventListener("DOMContentLoaded", function() {
+    const includes = document.querySelectorAll('[data-include]');
+
+    includes.forEach(el => {
+        const file = el.getAttribute('data-include');
+
+        // fetches relative path provided by HTML attribute
+        fetch(file)
+            .then(res => {
+                if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            })
+            .then(data =>{
+                el.innerHTML = data;
+                console.log(`${file} loaded successfully on ${window.location.pathname}`);
+            })
+            .catch(err => {
+                console.error("Header failed to load:", err);
+                // Fallback: Search by moving one directory upward
+                fetch('../' + file)
+                .then(res => res.text())
+                .then(data => {el.innerHTML = data; });
+            });
+    });
+});
