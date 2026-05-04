@@ -2,6 +2,9 @@
   "status": "completed",
   "message": "Access Granted: Site Tabs Unlocked",
   "resources": [
-    {"name": "Master Resource List", "url": "resources.html"}
+    {
+      "name": "Master Resource List",
+      "url": "resources.html"
+    }
   ]
 }
